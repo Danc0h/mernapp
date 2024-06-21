@@ -40,9 +40,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/users", userRouter);
 
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "/frontend/my-new-react/build")));
+app.use(
+  express.static(path.join(__dirname, "/frontend/my-new-react-app/build"))
+);
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/frontend/my-new-react/build/index.html"));
+  res.sendFile(
+    path.join(__dirname, "/frontend/my-new-react-app/build/index.html")
+  );
 });
 
 // Define error handler for express
