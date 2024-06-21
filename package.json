@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "build:backend": "cd backend && npm install ",
-    "build:frontend": "cd backend && npm install && cd frontend/my-new-react-app && npm install && npm run build",
+    "build:frontend": "cd frontend/my-new-react-app && npm install && npm run build",
     "build": "npm run build:backend && npm run build:frontend",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
