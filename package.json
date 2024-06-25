@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "backend/server.js",
   "scripts": {
-    "build": "cd backend && npm install  && cd ../frontend/my-new-react-app && npm install",
+    "build": "cd backend && npm install && cd ../frontend/my-new-react-app && npm install",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "14.x",
-    "npm": "6.x"
+    "node": "16.x",
+    "npm": "7.x"
   },
   "author": "",
   "license": "ISC",
